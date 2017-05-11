@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Test Page";
+}
+@Scripts.Render("~/node_modules/vue/dist/vue.min.js")
+<h1>test</h1>
+<div id="app">
+	{{ val }}
+	<input type="text" v-model="val">
+</div>
+<script>
+new Vue({
+	el: "#app",
+	data: {
+		val: "haha"
+	}
+})
+</script>
