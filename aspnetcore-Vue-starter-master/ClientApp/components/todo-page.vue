@@ -1,5 +1,8 @@
-<template>
-	<h1>{{val}}</h1>
+﻿<template>
+  <div>
+    <h1>{{val}}</h1>
+    <button @click="pop">im ddda button</button>
+  </div>
 </template>
 
 <script>
@@ -11,7 +14,9 @@
 		},
 
 		methods: {
-
+        pop() {
+            alert('asdfsd');
+        }
 		}
 	}
 </script>
